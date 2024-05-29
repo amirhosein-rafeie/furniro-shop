@@ -3,7 +3,11 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 
 const SignInButton: React.FC = () => {
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
+
+  if (status === "loading") {
+    return <p>Loading...</p>;
+  }
 
   return (
     <div>

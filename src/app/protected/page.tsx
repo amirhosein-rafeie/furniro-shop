@@ -18,14 +18,14 @@ const ProtectedPage: React.FC = () => {
 
   return (
     <div>
-      <h1>Protected Page</h1>
+      <h1 className="font-mono">Protected Page</h1>
       <Image
         width={52}
         height={52}
         src={session.user.image}
         alt={session.user.name}
       />
-      <p>Welcome {session.user.name}!</p>
+      <p className="font-sans">Welcome {session.user.name}!</p>
     </div>
   );
 };
