@@ -25,7 +25,7 @@ const ProtectedPage: React.FC = () => {
         src={session.user.image}
         alt={session.user.name}
       />
-      <p className="font-sans">Welcome {session.user.name}!</p>
+      <p className="font-montserrat">Welcome {session.user.name}!</p>
     </div>
   );
 };
