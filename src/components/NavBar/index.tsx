@@ -39,7 +39,10 @@ const NavBar = () => {
   );
 
   return (
-    <div className="bg-white flex justify-between h-[100px] items-center px-4">
+    <div
+      data-testid="nav"
+      className="bg-white flex justify-between h-[100px] items-center px-4"
+    >
       <div>
         <Image src="/logo-type.svg" width={185} height={40} alt="logo-type" />
       </div>
