@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import SessionProvider from "~/app/components/SessionProvider";
-import StoreProvider from "./lib/StoreProvider";
+import SessionProvider from "~/components/SessionProvider";
+import StoreProvider from "../lib/StoreProvider";
 
 // react-slick styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import NavBar from "~/components/NavBar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,7 +36,12 @@ export default function RootLayout({
       <link rel="icon" href="/logo.svg" type="image/svg" sizes="52" />
       <body className={`${inter.variable} ${montserrat.variable}`}>
         <StoreProvider>
-          <SessionProvider>{children}</SessionProvider>
+          <SessionProvider>
+            <div className="container mx-auto">
+              <NavBar />
+              {children}
+            </div>
+          </SessionProvider>
         </StoreProvider>
       </body>
     </html>

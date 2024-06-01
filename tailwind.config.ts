@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#B88E2F",
+      },
       fontFamily: {
         sans: ["var(--font-inter)"],
         montserrat: ["var(--font-montserrat)"],
