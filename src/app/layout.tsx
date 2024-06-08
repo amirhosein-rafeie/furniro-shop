@@ -42,7 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/logo.svg" type="image/svg" sizes="52" />
       <body
-        className={`${inter.variable} ${montserrat.variable} ${popins.variable}`}
+        className={`${popins.variable} ${inter.variable} ${montserrat.variable}`}
       >
         <StoreProvider>
           <SessionProvider>

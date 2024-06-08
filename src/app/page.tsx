@@ -1,10 +1,11 @@
-import Link from "next/link";
+import BrowseTheRange from "~/components/BrowseTheRange";
 import Landing from "~/components/Landing";
 
 export default function Page() {
   return (
-    <div>
+    <>
       <Landing />
-    </div>
+      <BrowseTheRange />
+    </>
   );
 }
