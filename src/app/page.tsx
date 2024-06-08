@@ -1,10 +1,10 @@
 import Link from "next/link";
+import Landing from "~/components/Landing";
 
 export default function Page() {
   return (
     <div>
-      <h1>Home</h1>
-      <Link href="/dashboard">Dashboard</Link>
+      <Landing />
     </div>
   );
 }

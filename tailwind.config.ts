@@ -14,6 +14,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-inter)"],
         montserrat: ["var(--font-montserrat)"],
+        popins: ["var(--font-popins)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

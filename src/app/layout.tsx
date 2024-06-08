@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import SessionProvider from "~/components/SessionProvider";
 import StoreProvider from "../lib/StoreProvider";
@@ -21,6 +21,13 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
+const popins = Poppins({
+  weight: "500",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-popins",
+});
+
 export const metadata: Metadata = {
   title: "Furniro",
   description: "Created by Amirhosein Rafeie",
@@ -34,7 +41,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/logo.svg" type="image/svg" sizes="52" />
-      <body className={`${inter.variable} ${montserrat.variable}`}>
+      <body
+        className={`${inter.variable} ${montserrat.variable} ${popins.variable}`}
+      >
         <StoreProvider>
           <SessionProvider>
             <div className="container mx-auto">
