@@ -1,7 +1,16 @@
+"use client";
+import { Button } from "@headlessui/react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Landing = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/shop");
+  };
+
   return (
     <div className="flex h-[var(--landing-height)] relative overflow-hidden min-h-[500px] max-h-[1440px]">
       <Image
@@ -23,9 +32,13 @@ const Landing = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis.
             </p>
-            <button className="w-[222px] my-auto bg-primary text-white font-popins font-bold py-6 px-10">
+
+            <Button
+              onClick={handleClick}
+              className="w-[222px] my-auto bg-primary text-white font-popins font-bold py-6 px-10"
+            >
               BUY NOW
-            </button>
+            </Button>
           </div>
         </div>
       </div>
