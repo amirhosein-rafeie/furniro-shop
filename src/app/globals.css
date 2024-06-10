@@ -11,6 +11,10 @@
   @apply font-popins;
 }
 
+.bt-outline {
+  @apply border-[2px] border-primary text-primary font-bold transition-colors hover:bg-primary hover:text-white;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
