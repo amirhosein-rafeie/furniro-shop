@@ -7,6 +7,10 @@
   --landing-height: calc(100vh - var(--navbar-height));
 }
 
+* {
+  @apply font-popins;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

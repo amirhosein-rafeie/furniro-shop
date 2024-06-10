@@ -24,18 +24,18 @@ const Landing = () => {
         <div></div>
         <div className="flex items-center">
           <div className="flex flex-col w-[640px] h-[440px] bg-[#FFF3E3] rounded-lg pt-14 px-10">
-            <p className="font-popins text-lg tracking-widest">New Arrival</p>
-            <h3 className="text-primary text-6xl font-popins font-bold leading-[70px] my-2">
+            <p className="text-lg tracking-widest">New Arrival</p>
+            <h3 className="text-primary text-6xl font-bold leading-[70px] my-2">
               Discover Our <br /> New Collection
             </h3>
-            <p className="font-popins text-lg">
+            <p className="text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis.
             </p>
 
             <Button
               onClick={handleClick}
-              className="w-[222px] my-auto bg-primary text-white font-popins font-bold py-6 px-10"
+              className="w-[222px] my-auto bg-primary text-white font-bold py-6 px-10"
             >
               BUY NOW
             </Button>
