@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat, Poppins } from "next/font/google";
-import "./globals.css";
 import SessionProvider from "~/components/SessionProvider";
 import StoreProvider from "../lib/StoreProvider";
+import NavBar from "~/components/NavBar";
 
 // react-slick styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import NavBar from "~/components/NavBar";
+
+import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
