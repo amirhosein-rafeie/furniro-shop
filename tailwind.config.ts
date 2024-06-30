@@ -13,6 +13,7 @@ const config: Config = {
         "custom-grey-1": "#898989",
         "custom-grey-2": "#F4F5F7",
         "custom-black-1": "rgba(58,58,58,0.72)",
+        "custom-creame-1": "#FCF8F3",
       },
       fontFamily: {
         sans: ["var(--font-inter)"],

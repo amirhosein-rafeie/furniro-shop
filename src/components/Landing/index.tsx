@@ -35,7 +35,7 @@ const Landing = () => {
 
             <Button
               onClick={handleClick}
-              className="w-[222px] my-auto bg-primary text-white font-bold py-6 px-10"
+              className="w-[222px] my-auto bt-contained py-6 px-10"
             >
               BUY NOW
             </Button>
