@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./globals.css";
+import Footer from "~/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({
             <div className="container mx-auto">
               <NavBar />
               {children}
+              <Footer />
             </div>
           </SessionProvider>
         </StoreProvider>
